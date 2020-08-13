@@ -1,0 +1,13 @@
+@import 'variable';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,700&display=swap');
+@import 'reset';
+@import 'wordBlock';
+@import 'forms';
+@import 'errorstyle';
+
+body {
+  background-color: $bgColor;
+  font-family: 'Roboto', sans-serif;
+  font-size: 400;
+  color: $colorFonts;
+}

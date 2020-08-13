@@ -1,0 +1,14 @@
+.forms-val {
+  border: 0;
+}
+
+.forms-val.error {
+  border: 1px solid red;
+}
+
+.message-error {
+  color: red;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: none;
+}

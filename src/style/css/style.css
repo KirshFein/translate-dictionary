@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+table {
+  position: relative;
+  border-spacing: 2rem 0;
+}
+
+.forms {
+  display: flex;
+  flex-wrap: wrap;
+}
+.forms .form-container {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.forms .buttons {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.forms .buttons:last-child {
+  margin-right: 0;
+}
+.forms .buttons button {
+  margin-bottom: 0.7rem;
+}
+.forms .buttons button:last-child {
+  margin-bottom: 0;
+}
+
+.btn-setting {
+  background: #cfc79a;
+  border: 1px solid #29252b;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: all 150ms linear;
+}
+.btn-setting:hover {
+  background: #c8be8b;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  color: #e8e4ce;
+  text-decoration: none;
+  transition: all 250ms linear;
+}
+
+@media all and (max-width: 917px) {
+  .buttons {
+    margin-top: 2rem;
+  }
+}
+.forms-val {
+  border: 0;
+}
+
+.forms-val.error {
+  border: 1px solid red;
+}
+
+.message-error {
+  color: red;
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: none;
+}
+
+body {
+  background-color: #d8c7ba;
+  font-family: "Roboto", sans-serif;
+  font-size: 400;
+  color: #342e36;
+}
+
+/*# sourceMappingURL=style.css.map */

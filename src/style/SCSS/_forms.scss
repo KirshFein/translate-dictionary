@@ -1,0 +1,54 @@
+@import 'variable';
+
+.forms {
+  display: flex;
+  flex-wrap: wrap;
+
+  .form-container {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    button {
+      margin-bottom: 0.7rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.btn-setting {
+  background: lighten(#cac190, 3%);
+  border: 1px solid darken($colorFonts, 4%);
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: all 150ms linear;
+
+  &:hover {
+    background: darken(#cac190, 1.5%);
+    border: 1px solid rgba(#000, 0.05);
+    box-shadow: 1px 1px 2px rgba(#fff, 0.2);
+    color: lighten(#cac190, 18%);
+    text-decoration: none;
+    // text-shadow: -1px -1px 0 darken($colorFonts, 9.5%);
+    transition: all 250ms linear;
+  }
+}
+
+@media all and (max-width: 917px) {
+  .buttons {
+    margin-top: 2rem;
+  }
+}

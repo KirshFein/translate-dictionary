@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Translate Dictionary</title>
+    <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="src/style/css/style.css"/>
+</head>
+
+<body>
+<h1>My English-Russian Dictionary</h1>
+<span class="message-error">Input is empty</span>
+<div class="forms">
+    <div class="form-container">
+        <label for="word">Word</label>
+        <input type="text" name="word" class="eng-word forms-val"/>
+    </div>
+    <div class="form-container">
+        <label for="translate-word">Translate</label>
+        <input type="text" name="translate-word" class="rus-word forms-val"/>
+    </div>
+    <div class="buttons">
+        <button class="addWords btn-setting">Add word</button>
+        <button class="showRusWords btn-setting">
+            Show/Hide russian words
+        </button>
+        <button class="showEngWords btn-setting">
+            Show/Hide english words
+        </button>
+    </div>
+</div>
+<hr>
+<h1>Saved words:</h1>
+<table class="word-container"></table>
+<script src="src/app.js"></script>
+</body>
+
+</html>
